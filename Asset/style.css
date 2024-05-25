@@ -1,0 +1,171 @@
+body {
+  background-color: #f0f2f5;
+}
+span i {
+  color: blue;
+  background-color: transparent !important;
+  font-size: 18px;
+}
+/* header Section */
+.h-logo {
+  & i {
+    color: blue;
+  }
+}
+
+.images-fix {
+  width: 50px !important;
+  height: 50px !important;
+  border-radius: 50% !important;
+  object-fit: cover !important;
+}
+.h-form {
+  & input {
+    vertical-align: middle;
+    margin-top: 8px;
+    width: 100% !important;
+    border-radius: 100px;
+    padding: 10px 20px;
+    border: none;
+    background-color: #f0f2f5;
+  }
+}
+input:focus {
+  outline: none;
+}
+.h-middle-logo {
+  & span {
+    padding: 8px 49px;
+    border-radius: 10px !important;
+    transition: 0.3s;
+    position: relative;
+    cursor: pointer;
+  }
+  & i {
+    font-size: 30px;
+    background-color: #fff;
+    margin: 0px;
+    padding: 0px;
+  }
+}
+
+.h-middle-logo span:hover {
+  background-color: #f0f2f5;
+}
+.h-middle-logo span::after {
+  content: "";
+  height: 2px;
+  background-color: blue;
+  width: 92%;
+  left: 6px;
+  bottom: -7px;
+  position: absolute;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.4s, visibility 0.4s;
+}
+
+.h-middle-logo span:hover::after {
+  opacity: 1;
+  visibility: visible;
+}
+.h-end-logo {
+  & span {
+    margin-right: 10px;
+    border-radius: 10px !important;
+    cursor: pointer;
+    & img {
+      border-radius: 50%;
+    }
+  }
+  & i {
+    font-size: 25px;
+    background-color: #fff;
+    margin-top: 10px;
+    padding: 0px;
+  }
+}
+
+.h-middle-logo span:hover {
+  background-color: #f0f2f5;
+}
+
+/* header Section */
+
+/* Left body */
+
+.common-class {
+  transition: 0.4s;
+  padding: 1px 13px;
+  vertical-align: middle;
+  width: 75% !important;
+  margin-left: 0px !important;
+  & img {
+    border-radius: 50%;
+  }
+}
+
+.common-class:hover {
+  background-color: #e5e7e6;
+
+  border-radius: 8px;
+}
+
+/* Left body */
+/* main Body */
+
+.main-sectin {
+  background-color: #fff;
+}
+
+.button-aria {
+  & button {
+    padding: 10px 15px;
+    border: navajowhite;
+    background-color: #f0f2f5;
+    border-radius: 25px;
+  }
+}
+.mind-btn {
+  padding: 7px 20px;
+  transition: 0.4s;
+  border-radius: 5px;
+}
+
+.mind-btn:hover {
+  background-color: #f0f2f5;
+}
+/* main Body */
+
+/* respomsive */
+
+@media only screen and (max-width: 768px) {
+  .head-display {
+    display: none;
+  }
+  .h-form {
+    display: none;
+  }
+
+  .h-middle-logo {
+    & span {
+      padding: 8px 20px;
+      border-radius: 10px !important;
+      transition: 0.3s;
+      position: relative;
+      cursor: pointer;
+      & i {
+        font-size: 18px !important;
+      }
+    }
+  }
+
+  .mind-btn {
+    padding: 0px 5px;
+    transition: 0.4s;
+    border-radius: 5px;
+    & i {
+      font-size: 18px !important;
+    }
+  }
+}
