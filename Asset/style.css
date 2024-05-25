@@ -168,4 +168,7 @@ input:focus {
       font-size: 18px !important;
     }
   }
+  .middleData {
+    width: 100% !important;
+  }
 }
