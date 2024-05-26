@@ -145,6 +145,8 @@ form.onsubmit = (e) => {
   }
 };
 
+// update post
+
 Post_update.onsubmit = (e) => {
   e.preventDefault();
   const updateData = new FormData(e.target);
@@ -157,10 +159,10 @@ Post_update.onsubmit = (e) => {
     if (item.id == id) {
       return {
         ...item,
-        name: name,
-        photo: photo,
-        content: content,
-        post_photo: post_photo,
+        name,
+        photo,
+        content,
+        post_photo,
       };
     } else {
       return item;
